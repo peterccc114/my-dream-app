@@ -9,4 +9,9 @@ import{ MyNewComponentComponent } from './my-new-component/my-new-component.comp
 })
 export class AppComponent {
   title = 'app';
+  // saysomething(message){
+  //   return message + ' something';
+  // }
 }
+// var greeter = new greeter();
+// greeter.saysomething('hello');

@@ -15,6 +15,7 @@ export class AppComponent {
     { id: 25, name: 'Chris', username: 'secilayha' },
     { id: 30, name: 'nick',  username: 'whatnickw'}
   ];
+  
   activeUser;
 
   selectUser(user){

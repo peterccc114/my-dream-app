@@ -8,10 +8,9 @@ import{ MyNewComponentComponent } from './my-new-component/my-new-component.comp
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  // saysomething(message){
-  //   return message + ' something';
-  // }
+  title = 'App';
+  users = [
+    { id: 25, name: 'Chris', username: 'secilayha' },
+    { id: 30, name: 'nick',  username: 'whatnickw'}
+  ];
 }
-// var greeter = new greeter();
-// greeter.saysomething('hello');

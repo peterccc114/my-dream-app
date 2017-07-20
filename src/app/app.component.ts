@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 
 import{ MyNewComponentComponent } from './my-new-component/my-new-component.component';
 
+export class User {
+  id:       number;
+  name:     string;
+  username: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,16 +16,16 @@ import{ MyNewComponentComponent } from './my-new-component/my-new-component.comp
   ]
 })
 export class AppComponent {
-  title = 'App';
-  users = [
+  title: string = 'App';
+  users: User[] = [
     { id: 25, name: 'Chris', username: 'secilayha' },
     { id: 30, name: 'nick',  username: 'whatnickw'}
   ];
-  
-  activeUser;
+
+  activeUser: User;
 
   selectUser(user){
     this.activeUser = user;
-    console.log(this.activeUser);
+    console.log(user);
   }
 }

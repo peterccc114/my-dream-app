@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 
 import{ MyNewComponentComponent } from './my-new-component/my-new-component.component';
-
-export class User {
-  id:       number;
-  name:     string;
-  username: string;
-}
-
+import{ User } from './shared/models/User'
+import{ UserformComponent } from './userform/userform.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

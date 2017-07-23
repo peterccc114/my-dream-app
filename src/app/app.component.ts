@@ -19,7 +19,8 @@ export class AppComponent {
 
   activeUser: User;
 
-  selectUser(user){
+  selectUser(user)
+  {
     this.activeUser = user;
     console.log(user);
   }
